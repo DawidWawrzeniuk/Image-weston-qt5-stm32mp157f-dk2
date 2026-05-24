@@ -95,8 +95,9 @@ To flash the generated image to the STM32MP1 board, use **STM32CubeProgrammer**.
 4. Load the generated flash layout or image files from:
 
 ```
-build-openstlinuxweston-stm32mp1/tmp-glibc/deploy/images/stm32mp1/arm-trusted-firmware
+build-openstlinuxweston-stm32mp1/tmp-glibc/deploy/images/stm32mp1/flashlayout_st-image-weston/optee
 ```
+Select files with "FlashLayout_sdcard...
 
 5. Flash the image to:
    - SD card or
