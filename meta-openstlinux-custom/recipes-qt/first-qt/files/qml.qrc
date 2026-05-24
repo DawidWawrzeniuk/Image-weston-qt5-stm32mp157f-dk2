@@ -1,0 +1,6 @@
+<RCC>                          <!-- Qt Resource Collection: początek definicji zasobów -->
+    <qresource prefix="/">     <!-- Zasoby będą widoczne pod ścieżką qrc:/ -->
+        <file>qml/main.qml</file>   <!-- Plik, który ma zostać wkompilowany do binarki -->
+    </qresource>
+</RCC>                         <!-- Koniec definicji zasobów -->
+
