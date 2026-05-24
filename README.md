@@ -6,8 +6,8 @@ Before building and flashing the system, download the required ST tools and file
 
 Download and install the official STM32CubeProgrammer tool from STMicroelectronics:
 
-https://wiki.st.com/stm32mpu/wiki/STM32CubeProgrammer  
-https://www.st.com/en/development-tools/stm32cubeprog.html
+- https://wiki.st.com/stm32mpu/wiki/STM32CubeProgrammer  
+- https://www.st.com/en/development-tools/stm32cubeprog.html
 
 This tool is used for:
 - flashing images to SD card / eMMC
@@ -48,10 +48,33 @@ Generated images are located in:
 
 ```
 tmp-glibc/deploy/images/stm32mp1/
+```
 
+---
 
+## 📥 Repository setup
 
-After flashing the image, copy this repository into the layers directory.
+After flashing the image, clone this repository:
 
+```bash
+git clone https://github.com/DawidWawrzeniuk/Image-weston-qt5-stm32mp157f-dk2.git
+```
 
-https://github.com/DawidWawrzeniuk/Image-weston-qt5-stm32mp157f-dk2.git
+Copy it into your layers directory:
+
+```bash
+cp -r Image-weston-qt5-stm32mp157f-dk2/layers/* ../layers/
+```
+
+---
+
+## 📦 Available layers after setup
+
+After copying the repository, the following layers will be available in the `layers` directory:
+
+- `meta-openembedded` – community OpenEmbedded layers  
+- `openembedded-core` – Yocto core system  
+- `meta-st` – STMicroelectronics BSP layer  
+- `meta-openstlinux` – ST OpenSTLinux configuration layer  
+- `meta-openstlinux-custom` – custom project layer (user modifications)  
+- `Image-weston-qt5-stm32mp157f-dk2` – project-specific layer containing custom recipes, Weston/Qt5 configuration and board support  
