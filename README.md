@@ -52,4 +52,6 @@ tmp-glibc/deploy/images/stm32mp1/
 
 
 After flashing the image, copy this repository into the layers directory.
+
+
 https://github.com/DawidWawrzeniuk/Image-weston-qt5-stm32mp157f-dk2.git
