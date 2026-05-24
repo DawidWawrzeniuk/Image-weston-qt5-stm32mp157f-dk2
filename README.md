@@ -78,3 +78,37 @@ After copying the repository, the following layers will be available in the `lay
 - `meta-openstlinux` – ST OpenSTLinux configuration layer  
 - `meta-openstlinux-custom` – custom project layer (user modifications)  
 - `Image-weston-qt5-stm32mp157f-dk2` – project-specific layer containing custom recipes
+
+
+
+## 🔥 Flashing the image (STM32CubeProgrammer)
+
+To flash the generated image to the STM32MP1 board, use **STM32CubeProgrammer**.
+
+### Steps:
+
+1. Open STM32CubeProgrammer
+2. Connect the board via:
+   - USB (DFU mode) or
+   - UART / ST-LINK (depending on setup)
+3. Select the correct device connection
+4. Load the generated flash layout or image files from:
+
+```
+build-openstlinuxweston-stm32mp1/tmp-glibc/deploy/images/stm32mp1/arm-trusted-firmware
+```
+
+5. Flash the image to:
+   - SD card or
+   - eMMC (recommended for production use)
+
+6. Wait until the flashing process completes successfully
+
+---
+
+### Notes
+
+- Make sure the board is in **bootloader / DFU mode** before flashing
+- Do not disconnect the board during flashing
+- Always use images generated from the same build environment
+
