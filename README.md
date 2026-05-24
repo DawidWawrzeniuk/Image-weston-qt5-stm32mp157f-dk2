@@ -77,4 +77,4 @@ After copying the repository, the following layers will be available in the `lay
 - `meta-st` – STMicroelectronics BSP layer  
 - `meta-openstlinux` – ST OpenSTLinux configuration layer  
 - `meta-openstlinux-custom` – custom project layer (user modifications)  
-- `Image-weston-qt5-stm32mp157f-dk2` – project-specific layer containing custom recipes, Weston/Qt5 configuration and board support  
+- `Image-weston-qt5-stm32mp157f-dk2` – project-specific layer containing custom recipes
